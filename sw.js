@@ -22,20 +22,20 @@ if (!self.define) {
       location.href;
     if (i[r]) return;
     let o = {};
-    const f = (e) => s(e, r),
-      a = { module: { uri: r }, exports: o, require: f };
-    i[r] = Promise.all(n.map((e) => a[e] || f(e))).then((e) => (c(...e), o));
+    const a = (e) => s(e, r),
+      d = { module: { uri: r }, exports: o, require: a };
+    i[r] = Promise.all(n.map((e) => d[e] || a(e))).then((e) => (c(...e), o));
   };
 }
-define(["./workbox-faaa562d"], function (e) {
+define(["./workbox-5361f2d4"], function (e) {
   "use strict";
   self.skipWaiting(),
     e.clientsClaim(),
     e.precacheAndRoute(
       [
-        { url: "assets/index-0121cbfd.css", revision: null },
-        { url: "assets/index-78f90d67.js", revision: null },
-        { url: "index.html", revision: "8dc3c3c2416738c4cbf920cf687f32b7" },
+        { url: "assets/index-8d6d2f44.js", revision: null },
+        { url: "assets/index-bbcc5315.css", revision: null },
+        { url: "index.html", revision: "656e90e5a0d23cefa414a3dec121a512" },
         { url: "registerSW.js", revision: "1872c500de691dce40960bb85481de07" },
         {
           url: "images/icon/48.png",
@@ -67,7 +67,7 @@ define(["./workbox-faaa562d"], function (e) {
         },
         {
           url: "manifest.webmanifest",
-          revision: "02081e918bf60c34ae58d9ef0b35b17d",
+          revision: "a5b6bc3d43b440c76ebde36ca36b0ef4",
         },
       ],
       {}
